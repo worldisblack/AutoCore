@@ -11,15 +11,15 @@ public class Utils {
         public static String defaultPrefix = "!";
 
         public static void sendMessage(L level, String message) {
-            Bukkit.getConsoleSender().sendMessage(color(level.toString().replace("$p", defaultPrefix) + message));
+            sendMessage(defaultPrefix, level, message);
         }
 
         public static void sendMessage(String prefix, L level, String message) {
-            Bukkit.getConsoleSender().sendMessage(color(level.toString().replace("$p", prefix) + message));
+            sendMessage(console(), level, message);
         }
 
         public static void sendMessage(CommandSender sender, L level, String message) {
-            sender.sendMessage(color(level.toString().replace("$p", defaultPrefix) + message));
+            sendMessage(sender, defaultPrefix, level, message);
         }
 
         public static void sendMessage(CommandSender sender, String prefix, L level, String message) {

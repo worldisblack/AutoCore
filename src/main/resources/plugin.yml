@@ -1,5 +1,5 @@
 name: AutoCore
-version: 0.9-Alpha
+version: 0.9-Alpha_build1
 main: kr.mcv.autosv.plugins.autocore.AutoCore
 api-version: 1.16
 website: autosv.mcv.kr

@@ -28,8 +28,8 @@ jobs:
     - name: Trigger BE build
       if: ${{ github.repository == 'worldisblack/AutoCore' }}
       run: |
-        git clone --depth=1 --branch=master https://github.com/worldisblack/AutoCore ../AutoCore
-        cd ../AutoCore
+        git clone --depth=1 --branch=master https://github.com/worldisblack/AutoCore ../AutoCoreBuild
+        cd ../AutoCoreBuild
         BNUM="BE Build " + $(($GITHUB_RUN_NUMBER))
         git tag ${BNUM}
         git config --global user.name "Build Uploader"

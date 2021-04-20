@@ -30,7 +30,7 @@ jobs:
       run: |
         git clone --depth=1 --branch=master https://github.com/worldisblack/AutoCore ../AutoCoreBuild
         cd ../AutoCoreBuild
-        BNUM="BE Build " + $(($GITHUB_RUN_NUMBER))
+        BNUM=BE Build $(($GITHUB_RUN_NUMBER))
         git tag ${BNUM}
         git config --global user.name "Build Uploader"
         git push https://Anuken:${{ secrets.API_TOKEN_GITHUB }}@github.com/worldisblack/AutoCore ${BNUM}

@@ -11,8 +11,9 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Gamemode command for user. overrides vanilla command
  *
+ * @update 1.0-Alpha
  * @version 1.0
- * @since 1.0
+ * @since 1.0-Alpha
  */
 public class GamemodeCommand implements CommandExecutor {
 
@@ -22,8 +23,6 @@ public class GamemodeCommand implements CommandExecutor {
             Utils.Message.sendMessage(sender, Utils.MLevel.I, "");
             return false;
         }
-
-
 
         return false;
     }

@@ -1,6 +1,6 @@
 name: AutoCore
-version: Build1
-main: kr.mcv.autosv.plugins.autocore.AutoCore
+version: 1.2-Alpha
+main: com.autosv.plugins.autocore.core.AutoCore
 api-version: 1.16
 website: autosv.mcv.kr
 authors: [ "검은색(choigun)" ]

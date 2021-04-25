@@ -28,5 +28,5 @@ jobs:
         cd ../AutoCoreBuilds
         BNUM=$(($GITHUB_RUN_NUMBER))
         git tag ${BNUM}
-        git config --global user.name "Black"
-        git push https://Black:${{ secrets.API_TOKEN_GITHUB }}@github.com/worldisblack/AutoCoreBuilds ${BNUM}
+        git config --global user.name "Build Upload"
+        git push https://worldisblack:${{ secrets.API_PASSWORD_GITHUB }}@github.com/worldisblack/AutoCoreBuilds ${BNUM}

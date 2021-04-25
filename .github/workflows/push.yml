@@ -24,7 +24,7 @@ jobs:
     - name: Trigger BE build
       if: ${{ github.repository == 'worldisblack/AutoCore' }}
       run: |
-        git clone --depth=1 --branch=main https://worldisblack:${{ secrets.API_PASsWORD_GITHUB }}@github.com/worldisblack/AutoCoreBuilds ../AutoCoreBuilds
+        git clone --depth=1 --branch=main https://worldisblack:${{ secrets.API_PASSWORD_GITHUB }}@github.com/worldisblack/AutoCoreBuilds.git ../AutoCoreBuilds
         cd ../AutoCoreBuilds
         BNUM=$(($GITHUB_RUN_NUMBER))
         git tag ${BNUM}
